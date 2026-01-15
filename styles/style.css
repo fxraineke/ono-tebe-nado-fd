@@ -8,9 +8,8 @@
 
 .header__links-list {
     display: flex;
-    gap: 12px;
+    gap: 33px;
     list-style: circle;
-    list-style-position: inside;
     text-wrap: nowrap;
 }
 
@@ -24,7 +23,9 @@
 
 .header__logo {
     display: block;
-    width: 130px;
+    width: 148px;
+    height: 105px;
+    padding: 0 5px;
 }
 
 .address {
@@ -34,7 +35,7 @@
     line-height: 135%;
 }
 
-.header > .address {
+.header>.address {
     justify-self: end;
     max-width: 240px;
 }
@@ -54,7 +55,7 @@
     font-weight: bold;
     font-size: 75pt;
     line-height: 115%;
-    letter-spacing: 30%;
+    letter-spacing: 0.3em;
 }
 
 .cover__title-text_left {
@@ -94,7 +95,7 @@
 }
 
 .letter-spacing-extended {
-    word-spacing: 85%;
+    word-spacing: 0.85em;
 }
 
 .overlay {
@@ -240,7 +241,7 @@
     font-size: 13.5pt;
 }
 
-.footer > .address {
+.footer>.address {
     justify-self: start;
     max-width: 264px;
 }
