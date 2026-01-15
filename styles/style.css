@@ -8,9 +8,9 @@
 
 .header__links-list {
     display: flex;
+    gap: 16px;
     list-style: circle;
     list-style-position: inside;
-    gap: 16px;
     text-wrap: nowrap;
 }
 
@@ -30,31 +30,31 @@
 .address {
     display: flex;
     flex-direction: column;
-    line-height: 24px;
     font-style: normal;
+    line-height: 24px;
 }
 
-.header > .address {
-    max-width: 240px;
+.header>.address {
     justify-self: end;
+    max-width: 240px;
 }
 
 .cover {
+    position: relative;
     min-height: 757px;
     padding: 165px 50px 50px 50px;
-    position: relative;
     color: #fff;
     text-transform: uppercase;
 }
 
 .cover__title {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
     font-weight: bold;
     font-size: 75pt;
     line-height: 115%;
     letter-spacing: 30%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
 }
 
 .cover__title-text_left {
@@ -62,35 +62,35 @@
 }
 
 .cover__title-text_center {
-    text-align: center;
     margin-left: 30px;
+    text-align: center;
 }
 
 .cover__title-text_right {
-    text-align: end;
     margin-right: -30px;
+    text-align: end;
 }
 
 .cover__description {
-    justify-content: space-between;
     display: flex;
-    margin-top: 106px;
+    justify-content: space-between;
     align-items: center;
+    margin-top: 106px;
 }
 
 .cover__description-text {
-    font-size: 16.5pt;
     font-weight: normal;
+    font-size: 16.5pt;
 }
 
 .bet-button {
-    padding: 12px 32px 11px 31px;
     border: #fff solid 1px;
-    text-decoration: none;
+    padding: 12px 32px 11px 31px;
+    color: #fff;
     font-size: 16.5pt;
+    text-decoration: none;
     text-transform: uppercase;
     background: transparent;
-    color: #fff;
 }
 
 .letter-spacing-extended {
@@ -98,18 +98,18 @@
 }
 
 .overlay {
-    background-color: #000;
-    opacity: 60%;
     position: absolute;
     inset: 0;
     z-index: -1;
+    opacity: 60%;
+    background-color: #000;
 }
 
 .cover__background {
-    background-image: url("../images/cover.jpg");
     position: absolute;
     inset: 0;
     z-index: -2;
+    background-image: url("../images/cover.jpg");
 }
 
 .lots {
@@ -117,19 +117,19 @@
 }
 
 .lots__heading {
-    font-size: 30pt;
-    font-weight: bold;
-    text-transform: uppercase;
     margin-left: 40px;
+    font-weight: bold;
+    font-size: 30pt;
+    text-transform: uppercase;
 }
 
 .lots__card-list {
-    list-style: none;
-    gap: 25px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
     margin-top: 27px;
     margin-bottom: 30px;
+    list-style: none;
 }
 
 .lots__card-list-item {
@@ -142,13 +142,13 @@
 }
 
 .card {
-    height: 100%;
     position: relative;
-    color: #fff;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
     padding: 48px 40px;
+    color: #fff;
 }
 
 .card__title {
@@ -162,51 +162,51 @@
 }
 
 .card_type_film {
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/card-lot-01.jpg");
     position: absolute;
     inset: 0;
     z-index: -2;
+    background-image: url("../images/card-lot-01.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .card_type_book {
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/card-lot-02.jpg");
     position: absolute;
     inset: 0;
     z-index: -2;
+    background-image: url("../images/card-lot-02.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .card_type_picture {
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/card-lot-03.jpg");
     position: absolute;
     inset: 0;
     z-index: -2;
+    background-image: url("../images/card-lot-03.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 .lots__look-more-link {
-    font-size: 15pt;
     margin-left: 40px;
+    font-size: 15pt;
 }
 
 .about {
     display: grid;
     grid-template-columns: 1fr auto;
-    margin: 120px 24px 0 24px;
     gap: 72px;
+    margin: 120px 24px 0 24px;
 }
 
 .about__logo {
     width: 240px;
     height: 240px;
-    background-color: #000;
-    border-radius: 100%;
-    margin-left: 47px;
     margin-top: 35px;
+    margin-left: 47px;
+    border-radius: 100%;
+    background-color: #000;
 }
 
 .about__logo-image {
@@ -216,29 +216,29 @@
 .about__title {
     margin-top: 136px;
     margin-bottom: 100px;
-    font-size: 30pt;
     font-weight: bold;
+    font-size: 30pt;
     text-transform: uppercase;
 }
 
 .about__text {
     display: flex;
     flex-direction: column;
-    font-size: 15pt;
     gap: 24px;
     margin-right: 5px;
+    font-size: 15pt;
 }
 
 .footer {
     display: grid;
     grid-template-columns: 1fr auto 1fr;
-    font-size: 13.5pt;
+    min-height: 180px;
     margin-top: 180px;
     padding: 0 50px;
-    min-height: 180px;
+    font-size: 13.5pt;
 }
 
-.footer > .address {
+.footer>.address {
     justify-self: start;
     max-width: 264px;
 }
@@ -257,11 +257,11 @@
 }
 
 .footer__social-list {
-    list-style: none;
     display: flex;
+    justify-self: end;
     justify-content: space-between;
     width: 240px;
-    justify-self: end;
+    list-style: none;
 }
 
 .footer__social-link {
