@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
@@ -14,8 +14,8 @@
     <header class="header">
       <nav>
         <ul class="header__links-list">
-          <li class="header__links-list-item_no-bullit">
-            <a class="header__link_active" href="#">главная</a>
+          <li class="header__links-list-item-no-bullit">
+            <a class="header__link-active" href="#">главная</a>
           </li>
           <li>
             <a href="#">посмотреть лоты</a>
@@ -28,34 +28,33 @@
       <a class="header__logo"
         ><img src="./images/logo-black.svg" alt="Оно тебе надо"
       /></a>
-      <div class="address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263- 265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
     </header>
     <main>
       <section class="cover">
         <h1 class="cover__title">
-          <span class="cover__title-text_left">оно</span>
-          <span class="cover__title-text_center">тебе</span>
-          <span class="cover__title-text_right">надо</span>
+          <span class="cover__title-text-left">оно</span>
+          <span class="cover__title-text-center">тебе</span>
+          <span class="cover__title-text-right">надо</span>
         </h1>
         <div class="cover__description">
-          <h2 class="cover__description-text letter-spacing-extended">
+          <p class="cover__description-text letter-spacing-extended">
             Аукцион вещей, в которые никто не верил
-          </h2>
+          </p>
           <button class="bet-button">Сделать ставку</button>
         </div>
         <div class="overlay"></div>
-        <div class="cover__background"></div>
       </section>
       <section class="lots">
         <h2 class="lots__heading">Лоты</h2>
         <ul class="lots__card-list">
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_film">
                 <h3 class="card__title">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
@@ -65,13 +64,12 @@
                   Андерсон?
                 </p>
                 <div class="overlay"></div>
-                <div class="card_type_film"></div>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_book">
                 <h3 class="card__title">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
@@ -84,13 +82,12 @@
                   Джеймса Джойса?
                 </p>
                 <div class="overlay"></div>
-                <div class="card_type_book"></div>
               </article>
             </a>
           </li>
           <li class="lots__card-list-item">
             <a class="card-link">
-              <article class="card">
+              <article class="card card_type_picture">
                 <h3 class="card__title">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
@@ -101,7 +98,6 @@
                   что это — одна из революционных работ Кандинского?
                 </p>
                 <div class="overlay"></div>
-                <div class="card_type_picture"></div>
               </article>
             </a>
           </li>
@@ -116,7 +112,7 @@
             alt="Оно тебе надо"
           />
         </div>
-        <div>
+        <article>
           <h2 class="about__title">Об аукционе</h2>
           <div class="about__text">
             <p>
@@ -136,19 +132,19 @@
               лоты стали культовыми.
             </p>
           </div>
-        </div>
+        </article>
       </section>
     </main>
     <footer class="footer">
-      <div class="address">
+      <address class="address">
         <a href="tel:+99995555555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
-        <address>наб. Принсенграхт 263- 265, Амстердам</address>
-      </div>
+        <p>наб. Принсенграхт 263- 265, Амстердам</p>
+      </address>
       <nav>
         <ul class="footer__menu-list">
           <li>
-            <a class="footer__menu-link_active" href="#">главная</a>
+            <a class="footer__menu-link-active" href="#">главная</a>
           </li>
           <li>
             <a href="#">посмотреть лоты</a>
@@ -160,17 +156,17 @@
       </nav>
       <ul class="footer__social-list">
         <li>
-          <a class="footer__social-link" href="#"
+          <a class="footer__social-link" href="#" target="_blank"
             ><img src="./images/yt.svg" alt="Youtube"
           /></a>
         </li>
         <li>
-          <a class="footer__social-link" href="#"
+          <a class="footer__social-link" href="#" target="_blank"
             ><img src="./images/vk.svg" alt="ВКонтакте"
           /></a>
         </li>
         <li>
-          <a class="footer__social-link" href="#"
+          <a class="footer__social-link" href="#" target="_blank"
             ><img src="./images/pinterest.svg" alt="Pinterest"
           /></a>
         </li>
